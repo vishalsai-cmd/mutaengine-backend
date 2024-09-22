@@ -5,11 +5,11 @@ import './pdfbill.css';
 
 function Success() {
   const location = useLocation();
-  const { sessionId } = location.state || { sessionId: 'No Session ID' }; // Default if no sessionId is passed
+  const { sessionId } = location.state || { sessionId: 'No seesion ID' }; //if no session id is passed,if we want we can pass sessionID over here
 
   const downloadInvoice = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/generate-invoice/${sessionId}`, {
+      const response = await fetch(`https://mutaengine-backend-0hc3.onrender.com/generate-invoice/${sessionId}`, {
         method: 'GET',
       });
       
