@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 app.use(express.json());
 const cors = require("cors");
 app.use(cors({
-  origin:["https://deploy-mern-1whq.vercel.app"],
+  origin:[""],
   methods:["POST","GET"],
   credentials:true
 }));
