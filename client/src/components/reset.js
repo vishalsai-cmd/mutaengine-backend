@@ -14,7 +14,7 @@ export default class Reset extends Component {
     e.preventDefault();
     const { email } = this.state;
     console.log(email);
-    fetch("https://mutaengine-backend-zhy5.vercel.app/forgot-password", {
+    fetch("http://localhost:5000/forgot-password", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
