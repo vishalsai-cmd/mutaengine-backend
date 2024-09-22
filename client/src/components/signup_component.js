@@ -16,7 +16,7 @@ export default function SignUp() {
       alert("Invalid Admin");
     } else {
       console.log(fname, lname, email, password);
-      fetch("https://mutaengine-backend-0hc3.onrender.com/register", {
+      fetch("http://localhost:5000/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
