@@ -9,7 +9,7 @@ function Success() {
 
   const downloadInvoice = async () => {
     try {
-      const response = await fetch(`https://mutaengine-backend-zhy5.vercel.app/generate-invoice/${sessionId}`, {
+      const response = await fetch(`http://localhost:5000/generate-invoice/${sessionId}`, {
         method: 'GET',
       });
       
