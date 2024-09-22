@@ -261,3 +261,5 @@ app.get('/generate-invoice/:sessionId', (req, res) => {
     });
   });
 });
+
+module.exports=app;
