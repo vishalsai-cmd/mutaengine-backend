@@ -23,7 +23,7 @@ export default function Login() {
       return;
     }
 
-    fetch("https://mutaengine-backend-0hc3.onrender.com/login-user", {
+    fetch("http://localhost:5000/login-user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
