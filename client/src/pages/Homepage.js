@@ -19,7 +19,7 @@ function Homepage() {
   
   const handleCheckout = async () => {
     try {
-      const response = await fetch('http://localhost:5000/create-checkout-session', {
+      const response = await fetch('mutaengine-backend-zhy5.vercel.app/create-checkout-session', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
