@@ -1,0 +1,49 @@
+.course-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #2980b9;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    color: #7f8c8d;
+  }
+  
+  .pay-button {
+    padding: 12px 24px;
+    background-color: #007bff; /* Professional blue color */
+    color: white;
+    border-radius: 4px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    display: block; 
+  }
+  
+  .pay-button:hover {
+    background-color: #0056b3; 
+  }
+  
+  .course-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center; 
+  }
+  
+  
