@@ -1,12 +1,27 @@
 {
-  "version":2,
-  "builds":[
-    {"src":"*.js","use":"@vercel/node"}
-  ],
-  "routes":[
+  "version": 2,
+  "builds": [
     {
-    "src":"/(.*)",
-    "dest":"/",  
+      "src": "src/app.js",    // Adjust to your main backend entry file
+      "use": "@vercel/node"
+    },
+    {
+      "src": "client/package.json",    // Adjust to your client package.json path
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "client/build"    // Adjust to where your React build outputs
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",    // Routes for API
+      "dest": "/src/app.js"
+    },
+    {
+      "src": "/(.*)",    // Routes for frontend
+      "dest": "/client/build/$1"
     }
   ]
 }
+
