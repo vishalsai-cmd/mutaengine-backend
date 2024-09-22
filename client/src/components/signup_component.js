@@ -16,7 +16,7 @@ export default function SignUp() {
       alert("Invalid Admin");
     } else {
       console.log(fname, lname, email, password);
-      fetch("mutaengine-backend-zhy5.vercel.app/register", {
+      fetch("https://mutaengine-backend-zhy5.vercel.app/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
