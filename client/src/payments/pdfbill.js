@@ -9,7 +9,7 @@ function Success() {
 
   const downloadInvoice = async () => {
     try {
-      const response = await fetch(`https://mutaengine-backend-0hc3.onrender.com/generate-invoice/${sessionId}`, {
+      const response = await fetch(`http://localhost:5000/generate-invoice/${sessionId}`, {
         method: 'GET',
       });
       
