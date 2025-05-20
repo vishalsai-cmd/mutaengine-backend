@@ -1,11 +1,10 @@
-// Success.js
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './pdfbill.css';
 
 function Success() {
   const location = useLocation();
-  const { sessionId } = location.state || { sessionId: 'No seesion ID' }; //if no session id is passed,if we want we can pass sessionID over here
+  const { sessionId } = location.state || { sessionId: 'No seesion ID' }; 
 
   const downloadInvoice = async () => {
     try {
